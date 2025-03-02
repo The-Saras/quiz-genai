@@ -1,6 +1,8 @@
 import json
 import random
+
 from google import genai
+
 client  = genai.Client(api_key="AIzaSyCJWYIyjEmKIq0U9ft2IOfsjCRyfzw5AU0")
 response = client.models.generate_content(
     model="gemini-2.0-flash",
